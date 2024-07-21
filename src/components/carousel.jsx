@@ -51,6 +51,7 @@ export const Carousel = ({ children, setCurrentStep }) => {
   const { dotsMarkup } = useMemo(() => {
     const dotsMarkup = children.map((_, index) => (
       <StyledDot
+        data-testid={`dot-${index}`}
         key={index}
         className={`dot ${currentIndex === index ? "active" : ""}`}
         onClick={() => handleDotClick(index)}

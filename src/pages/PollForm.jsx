@@ -12,7 +12,7 @@ const Questions = [
   'Summary'
 ];
 
-export const PollApp = () => {
+export const PollForm = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState({});
 
